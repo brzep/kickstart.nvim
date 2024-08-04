@@ -1,5 +1,14 @@
-alias ll="ls -al"
-alias la="ls -a"
+alias sourcezsh="source ~/.zshrc" 
 
-alias vi=nvim
-alias vim=nvim
+alias ll="ls -alh"
+alias la="ls -a"
+alias cr="cargo run"
+alias cre="cargo run --example"
+alias cb="cargo build"
+
+# alias vi=nvim
+# alias vim=nvim
+
+
+alias playground="cd ~/Documents/membrane/live_compositor_playground"
+alias compositor="cd ~/Documents/membrane/live_compositor"
