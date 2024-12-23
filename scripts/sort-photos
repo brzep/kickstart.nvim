@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir raw
+mkdir jpg
+mv *.JPG jpg
+mv *.ARW raw

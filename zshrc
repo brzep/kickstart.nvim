@@ -107,10 +107,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(starship init zsh)"
-export PATH="$PATH:/Library/Frameworks/GStreamer.framework/Commands"
+eval "$(zoxide init zsh)"
+export PATH="$PATH:/Library/Frameworks/GStreamer.framework/Commands:~/dotfiles/scripts"
 
 source ~/.zsh_aliases
 
+export EZA_CONFIG_DIR=~/dotfiles/eza
+export STARSHIP_CONFIG=~/dotfiles/starship.toml
 export CLICOLOR=1
 export DOCKER_HOST_IP=192.168.83.69
 
@@ -137,3 +140,6 @@ diki() {
     # there is one line added to each *_lines variable to fit it to `tail` needsq
     links -dump "https://www.diki.pl/slownik-angielskiego?q=$diki_word" | tail -n +"$((header_lines + 1))" | tail -r | tail -n +"$((footer_lines + 1))" | tail -rq | bat --plain
 }
+
+
+
