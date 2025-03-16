@@ -21,3 +21,5 @@ alias py=python3
 
 alias cd=z
 
+alias mdg="mix deps.get"
+alias mps="mix phx.server"
